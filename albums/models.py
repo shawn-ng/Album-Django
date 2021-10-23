@@ -8,3 +8,6 @@ class Albums(models.Model):
     artist = models.CharField(max_length=50)
     # you can store those stastic image in a static server.
     cover_image = models.CharField(max_length=200)
+
+    def __str__(self):
+        return f'{self.title} by {self.artist} ({self.id})'
