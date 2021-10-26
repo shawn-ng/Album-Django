@@ -14,3 +14,12 @@ class AlbumSerializer(serializers.ModelSerializer):
         fields = "__all__"
         # / fields = ['artist', 'title', 'cover_image', 'id']-> this is another way of writing.
         depth = 2
+
+
+class AlbumShallowSerializer(serializers.ModelSerializer):
+    class Meta:
+        # the model that the serializer is based on
+        model = Albums
+        # the fields to include in the serialization
+        fields = "__all__"
+        depth = 0

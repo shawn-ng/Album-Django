@@ -6,6 +6,7 @@ from django.db import models
 
 class Artist(models.Model):
     name = models.CharField(max_length=50, default=None)
+    # this is where the connection occurs between artist model and artist member model
     members = models.ManyToManyField(
         to='ArtistMember', related_name='artists', blank=True)
 
