@@ -17,8 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-
 urlpatterns = [
+    path('artists/', include("artists.urls")),
     path('admin/', admin.site.urls),
     # include direct to the albums (urls.py)
     path('albums/', include("albums.urls"))
