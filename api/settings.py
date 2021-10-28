@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-0)4#b5hnye=zd7ao-$e=%&oa3wmu^=!#_a=gqq-7dsg_fpdtrj
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "https://hengdi-first-ga-album-django.herokuapp.com",
+    "hengdi-first-ga-album-django.herokuapp.com",
     "afternoon-forest-14959.herokuapp.com",
     "0.0.0.0",
 ]
